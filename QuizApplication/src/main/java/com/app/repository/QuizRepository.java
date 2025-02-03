@@ -9,7 +9,6 @@ import com.app.model.QuizQuestion;
 
 public interface QuizRepository extends JpaRepository<QuizQuestion, Integer> {
 
-	Optional<QuizQuestion> findByCategory(String category);
-	
-	
+    // Use this method to find QuizQuestions by category
+    List<QuizQuestion> findByCategory(String category);  // Return List of QuizQuestions by category
 }

@@ -16,6 +16,9 @@ public interface QuizServiceint {
 
 	public void deleteQuestion(int id);
 
-	public QuizQuestion getQuestionByCategory(String category);
+	public List<QuizQuestion> getQuestionByCategory(String category);
+
+	List<QuizQuestion> addMultipleQuestions(List<QuizQuestion> questions);
+
 
 }
